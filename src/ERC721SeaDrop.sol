@@ -194,7 +194,7 @@ contract ERC721SeaDrop is
             return baseURI;
         }
 
-        return string(abi.encodePacked(baseURI, _toString(tokenId)));
+        return string(abi.encodePacked(baseURI, _toString(tokenId), ".json"));
     }
 
     /**
